@@ -1,0 +1,4 @@
+node_modules/**/*.js
+dest/**/*.js
+**/dist/**/*.js
+craco.config.js
