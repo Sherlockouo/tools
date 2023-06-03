@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
+import style from './style.module.scss';
 
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className="nav-wrapper">
-        <div className="list">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-          </ul>
-        </div>
+      <nav className={style.nav}>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a href="/" className="nav-link">
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/about" className="nav-link">
+              About
+            </a>
+          </li>
+        </ul>
       </nav>
     );
   }
