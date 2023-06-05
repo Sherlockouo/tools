@@ -1,38 +1,45 @@
 import React, { Component, useState } from 'react';
 import style from './style.module.scss';
-import { SettingTwoTone } from '@ant-design/icons';
-import { Drawer, FloatButton, Space } from 'antd';
+import { MenuUnfoldOutlined, SettingTwoTone } from '@ant-design/icons';
+import { Drawer, FloatButton, SiderProps, Space, Popover } from 'antd';
 
-export default class SideBar extends Component {
-  render() {
-    const [open, setOpen] = useState(false);
-    const showDrawer = () => {
-      setOpen(true);
-    };
-    const onClose = () => {
-      setOpen(false);
-    };
-    return (
-      <div className={style.sideBar}>
-        <div className="setting">
-          <Space>
-            <SettingTwoTone onClick={showDrawer} />
-          </Space>
-          <Drawer
-            title="Basic Drawer"
-            placement="left"
-            closable={false}
-            onClose={onClose}
-            open={open}
-            // key={placement}
-          ></Drawer>
-        </div>
-        <div className="back2Top">
-          <Space>
-            <FloatButton.BackTop visibilityHeight={0} />
-          </Space>
-        </div>
+function SideBar() {
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div className={style.sideBar}>
+      <div className="setting">
+        <Space>
+          <Popover placement="right" content="打开菜单">
+            <MenuUnfoldOutlined onClick={showDrawer}></MenuUnfoldOutlined>
+          </Popover>
+        </Space>
+        <Drawer
+          title="Basic Drawer"
+          placement="left"
+          closable={false}
+          onClose={onClose}
+          open={open}
+        >
+          <p>sao</p>
+          <p>sao</p>
+          <p>sao</p>
+          <p>sao</p>
+        </Drawer>
       </div>
-    );
-  }
+      <div className="back2Top">
+        <Space>
+          <FloatButton.BackTop visibilityHeight={0} />
+        </Space>
+      </div>
+    </div>
+  );
 }
+
+export default SideBar;

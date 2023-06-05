@@ -1,13 +1,13 @@
 // 底边栏样式
 .sideBar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 15px;
   :global {
     .settings {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 30px;
+      left: 10px;
     }
   }
 }
