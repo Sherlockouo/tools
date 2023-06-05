@@ -1,0 +1,12 @@
+// 容器样式
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  padding: 10px 20px;
+ 
+  min-height: 100vh;
+  min-width: 100vw;
+}

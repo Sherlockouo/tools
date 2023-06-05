@@ -5,18 +5,15 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className={style.nav}>
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/" className="nav-link">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/about" className="nav-link">
-              About
-            </a>
-          </li>
-        </ul>
+        <a href="/" className="navlink">
+          <div className="nav-home">Home</div>
+        </a>
+        <a href="/tools" className="navtools">
+          <div className="nav-tools">Tools</div>
+        </a>
+        <a href="/about" className="navabout">
+          <div className="nav-about">About</div>
+        </a>
       </nav>
     );
   }

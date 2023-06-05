@@ -1,15 +1,21 @@
 import React, { Suspense } from 'react';
-import Navbar from './components/navbar';
-import routes from './router';
 import { useRoutes } from 'react-router';
+import routes from './router';
+import Navbar from './components/navbar';
+import BackGround from './components/background';
+import style from './style.module.scss';
+import Footer from './components/footer';
+import Container from './components/container';
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.app}>
       <Navbar />
+      <BackGround />
       <Suspense fallback={<div>Loading...</div>}>
         <div className="main">{useRoutes(routes)}</div>
       </Suspense>
+      <Footer />
     </div>
   );
 }

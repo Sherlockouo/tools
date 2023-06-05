@@ -4,6 +4,8 @@ import { observer, useLocalObservable } from 'mobx-react';
 import { defaultState, StateContext } from './state';
 import { useEffect } from 'react';
 import { getArticleList } from '@/service/home';
+import Container from '@/components/container';
+import Box from '@/components/box';
 
 const Home = observer(() => {
   const state = useLocalObservable(() => defaultState);
@@ -20,37 +22,18 @@ const Home = observer(() => {
   }, []);
 
   return (
-    <div className={style.root}>
+    <div className={style.home}>
       <StateContext.Provider value={state}>
         <div className="container">
           <h3 className="center"> Home页面</h3>
           <p>欢迎来到首页</p>
-          <h1>{state.count}</h1>
-          <button
-            onClick={() => {
-              state.setProps({
-                count: state.count + 1
-              });
-            }}
-          >
-            +1
-          </button>
-          <button
-            onClick={() => {
-              state.setProps({
-                count: state.count - 1
-              });
-            }}
-          >
-            -1
-          </button>
+          <Container>
+            <Box>一些导航链接</Box>
+            <Box>halo</Box>
+            <Box>halo</Box>
+            <Box>halo</Box>
+          </Container>
         </div>
-
-        <ul>
-          {state.articleList.map((item) => {
-            return <li key={item.id}>{item.title}</li>;
-          })}
-        </ul>
       </StateContext.Provider>
     </div>
   );

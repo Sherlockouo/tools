@@ -6,6 +6,7 @@ import type { RouteObject } from 'react-router-dom';
 
 const Home = lazy(() => import('@/pages/home'));
 const About = lazy(() => import('@/pages/about'));
+const Tools = lazy(() => import('@/pages/tools'));
 const routes: RouteObject[] = [
   {
     path: '/',
@@ -18,6 +19,10 @@ const routes: RouteObject[] = [
   {
     path: '/about',
     element: <About />
+  },
+  {
+    path: '/tools',
+    element: <Tools />
   }
 ];
 
