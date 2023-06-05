@@ -6,13 +6,14 @@ import BackGround from './components/background';
 import style from './style.module.scss';
 import Footer from './components/footer';
 import Container from './components/container';
+import 'antd/dist/reset.css';
 
 function App() {
   return (
     <div className={style.app}>
       <Navbar />
       <BackGround />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="main"> </div>}>
         <div className="main">{useRoutes(routes)}</div>
       </Suspense>
       <Footer />

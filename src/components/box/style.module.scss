@@ -1,6 +1,6 @@
 // 底边栏样式
 .box {
-  background-color: #fff;
+  background-color: #403e3e;
   border: none;
   border-radius: .5rem;
   box-shadow: .5rem .875rem 2.375rem rgba(39,44,49,.06),.0625rem .1875rem .5rem rgba(39,44,49,.03);
@@ -9,4 +9,21 @@
   padding: 1.5625rem 2rem;
   position: relative;
   width: 80%;
+  :global {
+    .box-title {
+      background-color: rgb(67, 65, 65);
+      border-radius: .5rem;
+      box-shadow: 0 .3125rem .5rem rgba(36,159,253,.302);
+      color: #fff;
+      font-weight: 700;
+      left: 1.875rem;
+      padding: .5rem .9375rem;
+      position: absolute;
+      top: -1.125rem;
+      word-spacing: .625rem;
+    }
+    span {
+      padding-left: 5px;
+    }
+  }
 }

@@ -6,7 +6,7 @@ export default class BackGround extends Component {
     return (
       <div className={style.bg}>
         <div className={style.bgImage}>
-          <img src={require('@/assets/img/bg.avif')} alt="" />
+          <img src={require('@/assets/img/bg.png')} alt="" />
         </div>
       </div>
     );

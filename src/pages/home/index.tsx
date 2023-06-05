@@ -25,13 +25,15 @@ const Home = observer(() => {
     <div className={style.home}>
       <StateContext.Provider value={state}>
         <div className="container">
-          <h3 className="center"> Home页面</h3>
           <p>欢迎来到首页</p>
           <Container>
-            <Box>一些导航链接</Box>
-            <Box>halo</Box>
-            <Box>halo</Box>
-            <Box>halo</Box>
+            <Box title="1">
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+            </Box>
+            <Box title="2">一些导航链接</Box>
+            <Box title="3">一些导航链接</Box>
           </Container>
         </div>
       </StateContext.Provider>

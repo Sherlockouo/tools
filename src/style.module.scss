@@ -1,3 +1,7 @@
 .app {
-  
-} 
+  :global {
+    .main {
+      min-height: 79vh;
+    }
+  }
+}

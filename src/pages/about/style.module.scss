@@ -1,5 +1,87 @@
-.root {
-    .center {
-      color: whitesmoke;
+@import '@/assets/css/global.scss';
+
+.about {
+  :global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
     }
+    .devloper-info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+      border: 2px solid whitesmoke;
+      min-width: 40vw;
+      border-radius: $borderRadius;
+      .devloper {
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: row;
+        border: 2px solid whitesmoke;
+        .avatar {
+          position: relative;
+          z-index: 1;
+          &:hover {
+            -webkit-animation: rotate-in-center 0.6s
+              cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: rotate-in-center 0.6s
+              cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          }
+        }
+        .desc {
+          top: 0;
+          width: 100%;
+          margin: 0px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .name {
+            font-size: 2rem;
+          }
+          .hobby {
+            transition: 2.5s 1s linear;
+            -webkit-animation: slide-in-blurred-left 0.6s
+              cubic-bezier(0.23, 1, 0.32, 1) both;
+            animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+              both;
+          }
+          .skills {
+            transition: 1s 0.5s;
+            -webkit-animation: slide-in-blurred-right 0.6s
+              cubic-bezier(0.23, 1, 0.32, 1) both;
+            animation: slide-in-blurred-right 0.6s
+              cubic-bezier(0.23, 1, 0.32, 1) both;
+          }
+        }
+        img {
+          height: 80px;
+          width: 80px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+    .ideas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 0 0;
+      border: 2px solid whitesmoke;
+      border-radius: $borderRadius;
+      min-height: 30vh;
+      .ideas-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .idea {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

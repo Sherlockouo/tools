@@ -1,14 +1,22 @@
 // 底边栏样式
 .footer {
-  position: absolute;
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  
   color: whitesmoke;
   margin: 1.875rem auto;
   
   &:hover {
     cursor: pointer;
+  }
+  :global {
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
