@@ -19,81 +19,14 @@ const Tools = observer(() => {
       <div>
         <p> 一些常用工具 </p>
         <Container>
-          <Box title="文本工具">
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-            <ItemInfo
-              icon="#icon-book"
-              className="text"
-              desc="text tools"
-              name="textTools"
-              href="/tools/text/jsonfmt"
-            >
-              {' '}
-            </ItemInfo>
-          </Box>
-          <Box title="数据工具"></Box>
+          <TextTools />
+          <TextTools />
+          <TextTools />
+          <TextTools />
+          <TextTools />
+          <TextTools />
+          <TextTools />
+          <TextTools />
         </Container>
       </div>
     );
