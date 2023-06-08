@@ -34,6 +34,20 @@ const Home = observer(() => {
             </Box>
             <Box title="2">一些导航链接</Box>
             <Box title="3">一些导航链接</Box>
+            <Box title="1">
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+            </Box>
+            <Box title="2">一些导航链接</Box>
+            <Box title="3">一些导航链接</Box>
+            <Box title="1">
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+              <div className="aaa">daohang</div>
+            </Box>
+            <Box title="2">一些导航链接</Box>
+            <Box title="3">一些导航链接</Box>
           </Container>
         </div>
       </StateContext.Provider>

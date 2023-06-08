@@ -9,6 +9,7 @@
   padding: 1.5625rem 2rem;
   position: relative;
   width: 80%;
+  backdrop-filter: blur(5px);
   :global {
     .box-title {
       background-color: rgb(67, 65, 65);

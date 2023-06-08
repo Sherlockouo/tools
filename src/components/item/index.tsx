@@ -2,8 +2,10 @@ import React, { Component, Suspense } from 'react';
 // import { useRoutes } from 'react-router';
 // import routes from '@/router';
 import style from './style.module.scss';
+import IconComponent from '../iconConponent/indext';
 type Props = {
   children?: React.ReactNode;
+  className?: string;
   icon: string;
   name: string;
   desc: string;
@@ -11,11 +13,9 @@ type Props = {
 export default class Item extends Component<Props> {
   render() {
     return (
-      <div className={style.item}>
+      <div className={style.item + ' ' + this.props.className}>
         <div className="item-info">
-          <div className="item-icon"> </div>
-          <div className="item-name">{this.props.name} </div>
-          <div className="item-desc"> {this.props.desc} </div>
+          <div className="basic-item-info">{this.props.children}</div>
         </div>
       </div>
     );

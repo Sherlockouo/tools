@@ -1,7 +1,9 @@
 .app {
+  min-height: 100vh;
+  position: relative;
   :global {
     .main {
-      min-height: 79vh;
+      height: 100%;
     }
   }
 }

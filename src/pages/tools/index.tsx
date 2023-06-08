@@ -1,28 +1,33 @@
-import React, { memo } from 'react';
+import React, { memo, Suspense } from 'react';
 import style from './style.module.scss';
 import { observer, useLocalObservable } from 'mobx-react';
 import { defaultState, StateContext } from './state';
 import { useEffect } from 'react';
 import Container from '@/components/container';
 import Box from '@/components/box';
+import TextTools from './text';
+import { useRoutes } from 'react-router';
+import routes from '@/router/tools';
+import ItemInfo from '@/components/iteminfo';
+import { useLocation } from 'react-router-dom';
 
 const Tools = observer(() => {
   const state = useLocalObservable(() => defaultState);
-
+  const location = useLocation();
+  const index = () => {
+    return (
+      <div>
+        <Container>
+          <p> 一些常用工具 </p>
+          <a href="/tools/text">文本工具</a>
+        </Container>
+      </div>
+    );
+  };
   return (
     <div className={style.tools}>
-      <p> 一些常用工具 </p>
-      <StateContext.Provider value={state}>
-        <Container>
-          <Box title="1">
-            <div className="aaa">daohang</div>
-            <div className="aaa">daohang</div>
-            <div className="aaa">daohang</div>
-          </Box>
-          <Box title="2">一些导航链接</Box>
-          <Box title="3">一些导航链接</Box>
-        </Container>
-      </StateContext.Provider>
+      {location.pathname == '/tools' && index()}
+      <Suspense fallback={<div> </div>}>{useRoutes(routes)}</Suspense>
     </div>
   );
 });

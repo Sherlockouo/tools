@@ -1,5 +1,6 @@
 // idea样式
 .idea {
+  backdrop-filter: blur(5px);
   :global{
     display: flex;
     justify-content: center;

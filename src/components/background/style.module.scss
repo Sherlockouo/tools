@@ -1,5 +1,6 @@
 // 背景
-$blurRadius: 0rem;
+$blurRadius: 2px;
+
 .bg {
   height: 100%;
   left: 0px;
@@ -8,17 +9,20 @@ $blurRadius: 0rem;
   top: 0px;
   width: 100%;
   z-index: -1;
-  .bgImage {
-    max-width: 100%;
-    max-height: 100%;
-    filter: blur($blurRadius);
-    -webkit-filter: blur($blurRadius);
-    img {
-      object-fit: cover;
-      // background-position: center;
-      background-repeat: no-repeat;
+  :global {
+    .bg-image {
+      min-width: 100%;
+      min-height: 100%;
+      filter: blur($blurRadius);
+      -webkit-filter: blur($blurRadius);
+      background: #000;
+      background-image: url('../../assets/img/mountain-view.jpeg');
+      background-position: center;
+      filter: brightness(90%);
+      object-fit: contain;
+      // background-repeat: no-repeat;
       // background-size: cover;
-      transform: scale(1); 
+      transform: scale(1);
     }
   }
 }

@@ -3,10 +3,15 @@ import React, { Component, Suspense } from 'react';
 // import routes from '@/router';
 import style from './style.module.scss';
 type Props = {
+  className?: string;
   children?: React.ReactNode;
 };
 export default class Container extends Component<Props> {
   render() {
-    return <div className={style.container}>{this.props.children} </div>;
+    return (
+      <div className={style.container + ' ' + this.props.className}>
+        {this.props.children}{' '}
+      </div>
+    );
   }
 }

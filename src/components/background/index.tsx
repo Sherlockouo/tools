@@ -5,9 +5,7 @@ export default class BackGround extends Component {
   render() {
     return (
       <div className={style.bg}>
-        <div className={style.bgImage}>
-          <img src={require('@/assets/img/mountain-view.jpeg')} alt="" />
-        </div>
+        <div className="bg-image"></div>
       </div>
     );
   }

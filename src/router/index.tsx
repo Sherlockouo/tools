@@ -7,6 +7,8 @@ import type { RouteObject } from 'react-router-dom';
 const Home = lazy(() => import('@/pages/home'));
 const About = lazy(() => import('@/pages/about'));
 const Tools = lazy(() => import('@/pages/tools'));
+const Jsonfmt = lazy(() => import('@/pages/tools/text/json'));
+const TextTools = lazy(() => import('@/pages/tools/text'));
 const routes: RouteObject[] = [
   {
     path: '/',
@@ -22,7 +24,23 @@ const routes: RouteObject[] = [
   },
   {
     path: '/tools',
-    element: <Tools />
+    element: <Tools />,
+    children: [
+      {
+        path: '/tools/text',
+        element: <TextTools />,
+        children: [
+          {
+            path: '/tools/text/jsonfmt',
+            element: <Jsonfmt />
+          }
+        ]
+      },
+      {
+        path: '/tools/text/jsonfmt',
+        element: <Jsonfmt />
+      }
+    ]
   }
 ];
 

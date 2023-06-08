@@ -8,7 +8,8 @@
   color: whitesmoke;
   border: 2px solid whitesmoke;
   padding: 10px 20px;
-
+  height: 100%;
+  width: 100%;
   backdrop-filter: blur(5px);
   border-radius: $borderRadius;
   :global {

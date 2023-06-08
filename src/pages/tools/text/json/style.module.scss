@@ -1,0 +1,37 @@
+@import '@/assets/css/global.scss';
+
+$maxHeight: 50vh;
+$minHeight: 30vh;
+.json {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  // background-color: cadetblue;
+  border-radius: $borderRadius;
+  height: 100%;
+  :global {
+    .json-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      .json-input {
+        width: 100%;
+        flex: 4;
+        max-height: $maxHeight;
+        min-height: $maxHeight;
+        overflow-y: scroll;
+        margin-bottom: 50px;
+        textarea  {
+          height: 45vh;
+        }
+      }
+      .json-output {
+        width: 100%;
+        min-height: $minHeight;
+        overflow-y: scroll;
+      }
+    }
+  }
+}
