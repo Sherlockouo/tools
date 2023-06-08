@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './style.module.scss';
 
 type Props = {
   icon: string;
@@ -9,7 +10,10 @@ type Props = {
 class IconComponent extends React.Component<Props> {
   render() {
     return (
-      <svg className={`icon ${this.props.className}`} aria-hidden="true">
+      <svg
+        className={`${style.icon} ${this.props.className}`}
+        aria-hidden="true"
+      >
         <use xlinkHref={this.props.icon}></use>
       </svg>
     );

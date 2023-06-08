@@ -1,5 +1,6 @@
 a {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 body {
@@ -14,6 +15,14 @@ body {
 
 // variables
 $borderRadius: 5px;
+
+$color-text: #2f3e4c;
+
+$theme: #249ffd;
+$theme-success: #52de97;
+$theme-danger: #fa5477;
+$theme-info: #9ed0ff;
+$theme-wrning: #ffdd98;
 
 // ===============================================Animations==================================================
 // animations

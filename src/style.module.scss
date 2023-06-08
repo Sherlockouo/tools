@@ -1,6 +1,7 @@
 .app {
   min-height: 100vh;
   position: relative;
+  box-sizing: border-box;
   :global {
     .main {
       height: 100%;

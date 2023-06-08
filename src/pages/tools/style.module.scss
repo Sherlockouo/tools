@@ -1,6 +1,9 @@
 .tools {
     height: 100%;
     :global {
+        .item {
+            width: 10rem;
+        }
         p {
             text-align: center;
         }

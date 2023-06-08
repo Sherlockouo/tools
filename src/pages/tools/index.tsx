@@ -17,9 +17,83 @@ const Tools = observer(() => {
   const index = () => {
     return (
       <div>
+        <p> 一些常用工具 </p>
         <Container>
-          <p> 一些常用工具 </p>
-          <a href="/tools/text">文本工具</a>
+          <Box title="文本工具">
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+            <ItemInfo
+              icon="#icon-book"
+              className="text"
+              desc="text tools"
+              name="textTools"
+              href="/tools/text/jsonfmt"
+            >
+              {' '}
+            </ItemInfo>
+          </Box>
+          <Box title="数据工具"></Box>
         </Container>
       </div>
     );

@@ -15,19 +15,15 @@ export default class ItemInfo extends Component<Props> {
   render() {
     return (
       <div className={style.item + ' ' + this.props.className}>
-        <div className="item-info">
-          <div className="basic-item-info">
-            <a href={this.props.href}>
-              <div className="item-icon">
-                <IconComponent icon={this.props.icon} className="icon" />
-              </div>
-              <div className="">
-                <div className="item-name">{this.props.name} </div>
-                <div className="item-desc"> {this.props.desc} </div>
-              </div>
-            </a>
+        <a href={this.props.href} className="tools-card">
+          <div className="item-icon">
+            <IconComponent icon={this.props.icon} className="icon" />
           </div>
-        </div>
+          <div className="tools-card-text">
+            <div className="tools-card-name">{this.props.name} </div>
+            <div className="tools-card-desc"> {this.props.desc} </div>
+          </div>
+        </a>
       </div>
     );
   }
