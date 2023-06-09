@@ -1,0 +1,16 @@
+// menu样式
+.menu {
+  backdrop-filter: blur(5px);
+  ul,li {
+    list-style: none;
+  }
+  :global{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    li {
+      width: 100%;
+      background: #f5dddd;
+    }
+  }
+}

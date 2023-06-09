@@ -17,7 +17,7 @@ const TextTools = memo(() => {
         <Container>
           <Box title="文本工具">
             <ItemInfo
-              icon="#icon-book"
+              icon="#icon-json"
               className="text"
               desc="text tools"
               name="textTools"

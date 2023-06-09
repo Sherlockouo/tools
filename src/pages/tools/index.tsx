@@ -18,16 +18,14 @@ const Tools = observer(() => {
     return (
       <div>
         <p> 一些常用工具 </p>
-        <Container>
-          <TextTools />
-          <TextTools />
-          <TextTools />
-          <TextTools />
-          <TextTools />
-          <TextTools />
-          <TextTools />
-          <TextTools />
-        </Container>
+        <TextTools />
+        <TextTools />
+        <TextTools />
+        <TextTools />
+        <TextTools />
+        <TextTools />
+        <TextTools />
+        <TextTools />
       </div>
     );
   };

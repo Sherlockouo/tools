@@ -2,7 +2,7 @@ import React, { Component, Suspense } from 'react';
 // import { useRoutes } from 'react-router';
 // import routes from '@/router';
 import style from './style.module.scss';
-import IconComponent from '../iconConponent/indext';
+import IconComponent from '../iconConponent';
 type Props = {
   children?: React.ReactNode;
   className?: string;
